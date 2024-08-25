@@ -23,10 +23,7 @@ app.use("/api/auth",userRoute);
 app.use("/api/sauces",sauceRoute);
 app.use("/images", express.static(path.join(__dirname, 'public/images')));
 
-
-app.listen(3000,()=>{
-    console.log('server is running on port 3000')
-})
+module.exports = app;
 
 
 
